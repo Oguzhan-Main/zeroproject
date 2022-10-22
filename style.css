@@ -68,39 +68,45 @@ body
     background-color: #2d2929;
 
 }
-
-
 .email{
     text-align: center;
     font-size: 25px;
     color: antiquewhite;
 }
 .refr{
-    text-align: center;
-    margin:25px 600px;
-
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10px auto;
+    padding:10px 10px;
+    text-decoration:none;
+    transition: 0.5s;
+    overflow: hidden;
 }
 .refr li{
-    float: left;
+    border-radius: 12px;
     list-style-type: none;
-    display: inline-table;
-
-
 }
 .refr li a{
-    background-color: #2a2f5a;color: aquamarine;display:block;padding:10px 20px;text-decoration:none;
+    background-color: #ededed;
+    color: #101010;
+    display:flex;
+    padding:10px 20px;
+    text-decoration:none;
+    transition: 0.5s;
+    overflow: hidden;
 }
 .refr li a:hover{
-    background-color: #3f2c56;
+    border-radius: 10%;
+    color: #ffffff;
+    background-color: rgb(209, 194, 63);
+   transform: translateX(50)
 }
 .piccenters{
     display: flex;
     justify-content: center;
-    top: 650px;
-    left: 750px;
-
     box-shadow: 10px 10px 10px rgb(118, 75, 75);
-    margin: 18rem auto;
+    margin: 3rem auto;
 }
 ion-icon {
     color: blanchedalmond;
@@ -117,45 +123,6 @@ ion-icon {
     position: absolute;
     top: 250px;
     left: 750px;
-}
-footer{
-display: flex;
-margin-top: auto;    bottom: 0px;
-    left: 0;
-    right: 0;
-    background-color:rgb(21, 20, 20);
-    height: auto;
-    font-family: "Lucida Sans";
-    padding-top: 20px;
-    width: 100%;
-    color:#fff;
-}
-.footer-cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-cont h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-cont p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-}
-.footer-bottom{
-    background-color: rgb(89, 76, 76);
-    width: 100vw;
-    height: 50px;
-margin: 20px 10px;
-    padding: 5px 0;
-    text-align: center;
 }
 .projeler{
     float: right;
