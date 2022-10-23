@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
 body 
 {
     background-image: url("Görseller/bbq.jpg");
@@ -7,6 +10,7 @@ body
     font-size: 25px;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 section {
     display: grid;
@@ -104,11 +108,6 @@ html{
     padding: 3rem;
     background-color: #2d2929;
 }
-.email{
-    text-align: center;
-    font-size: 25px;
-    color: antiquewhite;
-}
 .refr{
     display:flex;
     justify-content: center;
@@ -162,15 +161,6 @@ ion-icon {
     text-decoration: none;
     margin: 0 10px;
   }
-  .socialmedia{
-    color: blanchedalmond;
-    text-align: center;
-}
-.contact{
-    position: absolute;
-    top: 250px;
-    left: 750px;
-}
 .projeler{
     float: right;
     text-align: right;
@@ -285,6 +275,94 @@ ion-icon {
     box-shadow: 10px 10px 10px rgb(118, 75, 75);
     margin: 3rem auto;
 }
+
+/* Footer */
+.footer{
+    background-color: #24262b;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+footer *{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transform: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color:#24262b;
+    background-color: #ffffff;
+}
+
+/* res */
+@media(max-width:767px){
+.footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}
 /* TABLET VERSION */
 
 @media (max-width: 1250px) {
@@ -295,5 +373,4 @@ ion-icon {
         grid-template-rows: 300px(min-max);
     }
 }
-
-/* PHONE VERSION */
+}
